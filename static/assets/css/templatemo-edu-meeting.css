@@ -767,7 +767,7 @@ banner
 
 /* 
 ---------------------------------------------
-bannern Review Card
+bannern teacher view Review Card
 --------------------------------------------- 
 */
 
@@ -845,7 +845,108 @@ bannern Review Card
   }
 }
 
+/* 
+---------------------------------------------
+bannern teacher view user Card
+--------------------------------------------- 
+*/
 
+/* General Review Card Styling */
+.main-banner .student-card {
+  background-color: #fff; /* White card background */
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  height: 300px;
+}
+
+.main-banner .student-card:hover {
+  transform: translateY(-5px); /* Slight hover lift */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Top Half: Profile Image */
+.main-banner .student-image {
+  background-color: #f4f4f4; /* Light gray background for contrast */
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-banner .profile-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%; /* Circular profile image */
+  border: 3px solid #ffde59; /* Yellow border */
+  object-fit: cover;
+}
+
+/* Bottom Half: student Content */
+.main-banner .student-content {
+  padding: 15px;
+  text-align: center;
+}
+
+.main-banner .student-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #000; /* Black text */
+  margin-bottom: 8px;
+}
+
+.main-banner .student-text {
+  font-size: 1rem;
+  color: #555; /* Subtle gray text */
+  margin-bottom: 15px;
+}
+
+/* Button Styling */
+.main-banner .view-details-btn {
+  background-color: #ffde59; /* Yellow background */
+  border: none;
+  color: #000; /* Black text */
+  padding: 10px 20px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.main-banner .view-details-btn:hover {
+  background-color: #f0c636; /* Darker yellow on hover */
+  color: #fff; /* White text on hover */
+}
+
+/* Hide additional cards by default */
+.student-card-container.hidden {
+  display: none;
+}
+
+/* Button Styling */
+#userview-toggleButton {
+  background-color: #ffc107;
+  color: #000;
+  font-weight: bold;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#userview-toggleButton:hover {
+  background-color: #e0a800;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .main-banner .student-card {
+    padding: 15px;
+  }
+}
 
 /*
 ---------------------------------------------

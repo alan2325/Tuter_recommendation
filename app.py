@@ -36,16 +36,16 @@ def view_teacher():
 
 ################################# teacher #############################
 
-@app.route('/byhybhvgh')
+@app.route('/teacher_index')
 def teacher_index():
     return render_template('teacher_side/index.html')
 
-@app.route('/')
+@app.route('/teacher_view_review')
 def teacher_view_review():
     return render_template('teacher_side/teacher_view_review.html')
 
 @app.route('/teacher_view_students')
 def teacher_view_students():
-    return render_template('teacher_side/teacher_view_students.html')
+    return render_template('teacher_side/teacher-view_students.html')
 
 app.run()
