@@ -806,7 +806,10 @@ bannern teacher view Review Card
 .main-banner .review-stars {
   color: #ffc107; /* Yellow color for stars */
   font-size: 1rem;
+  /* margin-bottom: 5px; */
 }
+
+
 
 /* Review Text */
 .main-banner .review-text {
@@ -814,6 +817,7 @@ bannern teacher view Review Card
   color: #333333; /* Dark gray for readability */
   line-height: 1.5;
   margin-top: 10px;
+  height: 100px;
 }
 
 /* Hide additional cards by default */
@@ -858,6 +862,7 @@ bannern teacher view user Card
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s, box-shadow 0.3s;
+  margin-top: 100px;
   height: 300px;
 }
 
